@@ -8,3 +8,7 @@ target_link_libraries(task1_image ${OpenCV_LIBS})
 
 add_executable(task2_video task2_video.cpp)
 target_link_libraries(task2_video ${OpenCV_LIBS})
+target_include_directories(task1_image PRIVATE ${OpenCV_INCLUDE_DIRS})
+add_executable(task2_video task2_video.cpp)
+target_link_libraries(task2_video ${OpenCV_LIBS})
+target_include_directories(task2_video PRIVATE ${OpenCV_INCLUDE_DIRS})
